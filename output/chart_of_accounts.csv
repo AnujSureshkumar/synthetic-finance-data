@@ -1,0 +1,209 @@
+account_code,account_name,account_type,group,sub_group,normal_balance,is_control
+1010,Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1015,Accumulated Depreciation - Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1020,Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1025,Accumulated Depreciation - Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1030,Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1035,Accumulated Depreciation - Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1040,Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1045,Accumulated Depreciation - Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1050,Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1055,Accumulated Depreciation - Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1060,Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1065,Accumulated Depreciation - Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1070,Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1075,Accumulated Depreciation - Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1080,Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+1085,Accumulated Depreciation - Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+1100,Software Licences (Intangible),Asset,Non-current assets,Intangible assets,Debit,False
+1105,Accumulated Amortisation - Software,Asset,Non-current assets,Intangible assets,Credit,False
+1110,Goodwill,Asset,Non-current assets,Intangible assets,Debit,False
+1120,Right-of-Use Asset - Office Premises,Asset,Non-current assets,Right-of-use assets,Debit,False
+1121,Right-of-Use Asset - Equipment,Asset,Non-current assets,Right-of-use assets,Debit,False
+1125,Accumulated Depreciation - ROU Assets,Asset,Non-current assets,Right-of-use assets,Credit,False
+1150,Security Deposits - Rent,Asset,Non-current assets,Other financial assets,Debit,False
+1151,Security Deposits - Utilities,Asset,Non-current assets,Other financial assets,Debit,False
+1160,Deferred Tax Asset,Asset,Non-current assets,Deferred tax,Debit,False
+1170,Investment in Subsidiary - Middle East,Asset,Non-current assets,Investments,Debit,False
+1200,Trade Receivables - Domestic,Asset,Current assets,Trade receivables,Debit,True
+1201,Trade Receivables - Export,Asset,Current assets,Trade receivables,Debit,True
+1205,Allowance for Expected Credit Loss,Asset,Current assets,Trade receivables,Credit,False
+1210,Unbilled Revenue,Asset,Current assets,Trade receivables,Debit,False
+1300,HDFC Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+1301,ICICI Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+1302,Axis Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+1303,State Bank of India - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+1304,Kotak Mahindra Bank - Payroll A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+1305,HDFC Bank - EEFC A/c (USD),Asset,Current assets,Cash & cash equivalents,Debit,False
+1320,Cash in Hand,Asset,Current assets,Cash & cash equivalents,Debit,False
+1325,Petty Cash,Asset,Current assets,Cash & cash equivalents,Debit,False
+1330,Fixed Deposits (< 3 months),Asset,Current assets,Cash & cash equivalents,Debit,False
+1335,Fixed Deposits (3-12 months),Asset,Current assets,Bank balances - other,Debit,False
+1400,Input CGST 0%,Asset,Current assets,GST input credit,Debit,False
+1401,Input SGST 0%,Asset,Current assets,GST input credit,Debit,False
+1402,Input IGST 0%,Asset,Current assets,GST input credit,Debit,False
+1403,Input CGST 5%,Asset,Current assets,GST input credit,Debit,False
+1404,Input SGST 5%,Asset,Current assets,GST input credit,Debit,False
+1405,Input IGST 5%,Asset,Current assets,GST input credit,Debit,False
+1406,Input CGST 12%,Asset,Current assets,GST input credit,Debit,False
+1407,Input SGST 12%,Asset,Current assets,GST input credit,Debit,False
+1408,Input IGST 12%,Asset,Current assets,GST input credit,Debit,False
+1409,Input CGST 18%,Asset,Current assets,GST input credit,Debit,False
+1410,Input SGST 18%,Asset,Current assets,GST input credit,Debit,False
+1411,Input IGST 18%,Asset,Current assets,GST input credit,Debit,False
+1412,Input CGST 28%,Asset,Current assets,GST input credit,Debit,False
+1413,Input SGST 28%,Asset,Current assets,GST input credit,Debit,False
+1414,Input IGST 28%,Asset,Current assets,GST input credit,Debit,False
+1450,GST Electronic Cash Ledger,Asset,Current assets,GST input credit,Debit,False
+1451,GST Input Credit (Provisional / ineligible),Asset,Current assets,GST input credit,Debit,False
+1460,TDS Receivable (26AS),Asset,Current assets,Other tax assets,Debit,False
+1461,TCS Receivable,Asset,Current assets,Other tax assets,Debit,False
+1462,Advance Income Tax,Asset,Current assets,Other tax assets,Debit,False
+1463,Income Tax Refund Due,Asset,Current assets,Other tax assets,Debit,False
+1500,Inventory - Consumables,Asset,Current assets,Inventories,Debit,False
+1501,Inventory - Spares,Asset,Current assets,Inventories,Debit,False
+1550,Advance to Vendors,Asset,Current assets,Other current assets,Debit,True
+1551,Advance to Employees,Asset,Current assets,Other current assets,Debit,False
+1552,Prepaid Insurance,Asset,Current assets,Other current assets,Debit,False
+1553,Prepaid Software Subscriptions,Asset,Current assets,Other current assets,Debit,False
+1554,Prepaid Rent,Asset,Current assets,Other current assets,Debit,False
+1555,Prepaid AMC,Asset,Current assets,Other current assets,Debit,False
+1560,GST Refund Receivable (Export/LUT),Asset,Current assets,Other current assets,Debit,False
+1561,Receivable from Group Companies,Asset,Current assets,Other current assets,Debit,True
+2000,Term Loan - HDFC Bank,Liability,Non-current liabilities,Borrowings,Credit,False
+2001,Working Capital Loan (CC),Liability,Current liabilities,Borrowings,Credit,False
+2002,Vehicle Loan,Liability,Non-current liabilities,Borrowings,Credit,False
+2010,Lease Liability - Non-current,Liability,Non-current liabilities,Lease liabilities,Credit,False
+2011,Lease Liability - Current,Liability,Current liabilities,Lease liabilities,Credit,False
+2100,Trade Payables - Goods,Liability,Current liabilities,Trade payables,Credit,True
+2101,Trade Payables - Services,Liability,Current liabilities,Trade payables,Credit,True
+2102,Trade Payables - MSME,Liability,Current liabilities,Trade payables,Credit,True
+2103,Trade Payables - Import,Liability,Current liabilities,Trade payables,Credit,True
+2110,Creditors for Capital Goods,Liability,Current liabilities,Trade payables,Credit,True
+2200,Output CGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2201,Output SGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2202,Output IGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2203,Output CGST 5%,Liability,Current liabilities,GST payable,Credit,False
+2204,Output SGST 5%,Liability,Current liabilities,GST payable,Credit,False
+2205,Output IGST 5%,Liability,Current liabilities,GST payable,Credit,False
+2206,Output CGST 12%,Liability,Current liabilities,GST payable,Credit,False
+2207,Output SGST 12%,Liability,Current liabilities,GST payable,Credit,False
+2208,Output IGST 12%,Liability,Current liabilities,GST payable,Credit,False
+2209,Output CGST 18%,Liability,Current liabilities,GST payable,Credit,False
+2210,Output SGST 18%,Liability,Current liabilities,GST payable,Credit,False
+2211,Output IGST 18%,Liability,Current liabilities,GST payable,Credit,False
+2212,Output CGST 28%,Liability,Current liabilities,GST payable,Credit,False
+2213,Output SGST 28%,Liability,Current liabilities,GST payable,Credit,False
+2214,Output IGST 28%,Liability,Current liabilities,GST payable,Credit,False
+2250,GST Payable under RCM,Liability,Current liabilities,GST payable,Credit,False
+2251,GST Liability - Net Payable,Liability,Current liabilities,GST payable,Credit,False
+2300,TDS Payable - 192 (Salary),Liability,Current liabilities,Statutory dues,Credit,False
+2301,TDS Payable - 194C (Contractors),Liability,Current liabilities,Statutory dues,Credit,False
+2302,TDS Payable - 194J (Professional Fees),Liability,Current liabilities,Statutory dues,Credit,False
+2303,TDS Payable - 194I (Rent),Liability,Current liabilities,Statutory dues,Credit,False
+2304,TDS Payable - 194H (Commission),Liability,Current liabilities,Statutory dues,Credit,False
+2305,TDS Payable - 194Q (Purchase of Goods),Liability,Current liabilities,Statutory dues,Credit,False
+2306,TDS Payable - 195 (Non-resident Payments),Liability,Current liabilities,Statutory dues,Credit,False
+2320,TCS Payable - 206C,Liability,Current liabilities,Statutory dues,Credit,False
+2350,PF Payable (Employee + Employer),Liability,Current liabilities,Statutory dues,Credit,False
+2351,ESI Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2352,Professional Tax Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2353,Labour Welfare Fund Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2354,NPS Payable (Employer),Liability,Current liabilities,Statutory dues,Credit,False
+2400,Salaries Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2401,Bonus Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2402,Reimbursements Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2410,Provision for Gratuity,Liability,Non-current liabilities,Employee benefits,Credit,False
+2411,Provision for Leave Encashment,Liability,Non-current liabilities,Employee benefits,Credit,False
+2500,Accrued Expenses,Liability,Current liabilities,Other current liabilities,Credit,False
+2501,Advance from Customers,Liability,Current liabilities,Other current liabilities,Credit,True
+2502,Deferred Revenue (Unearned),Liability,Current liabilities,Other current liabilities,Credit,False
+2503,Payable to Group Companies,Liability,Current liabilities,Other current liabilities,Credit,True
+2510,Provision for Income Tax,Liability,Current liabilities,Provisions,Credit,False
+2511,Provision for Audit Fees,Liability,Current liabilities,Provisions,Credit,False
+2512,Provision for Expenses,Liability,Current liabilities,Provisions,Credit,False
+2520,Deferred Tax Liability,Liability,Non-current liabilities,Deferred tax,Credit,False
+3000,Equity Share Capital,Equity,Equity,Share capital,Credit,False
+3001,Preference Share Capital,Equity,Equity,Share capital,Credit,False
+3010,Securities Premium,Equity,Equity,Reserves & surplus,Credit,False
+3020,Retained Earnings,Equity,Equity,Reserves & surplus,Credit,False
+3021,General Reserve,Equity,Equity,Reserves & surplus,Credit,False
+3030,Current Year Profit & Loss,Equity,Equity,Reserves & surplus,Credit,False
+3040,Foreign Currency Translation Reserve,Equity,Equity,Other reserves,Credit,False
+3050,Remeasurement of Defined Benefit Plans (OCI),Equity,Equity,Other reserves,Credit,False
+4000,Revenue - Software Services (Domestic),Income,Revenue,Operating revenue,Credit,False
+4001,Revenue - Software Services (Export),Income,Revenue,Operating revenue,Credit,False
+4002,Revenue - Annual Maintenance Contracts,Income,Revenue,Operating revenue,Credit,False
+4003,Revenue - Product Licences,Income,Revenue,Operating revenue,Credit,False
+4004,Revenue - SaaS Subscriptions,Income,Revenue,Operating revenue,Credit,False
+4005,Revenue - Implementation & Consulting,Income,Revenue,Operating revenue,Credit,False
+4006,Revenue - Managed Services,Income,Revenue,Operating revenue,Credit,False
+4010,Sales Returns & Allowances,Income,Revenue,Operating revenue,Debit,False
+4020,Interest Income - Deposits,Income,Other income,Other income,Credit,False
+4021,Foreign Exchange Gain,Income,Other income,Other income,Credit,False
+4022,Profit on Sale of Assets,Income,Other income,Other income,Credit,False
+4023,Liabilities Written Back,Income,Other income,Other income,Credit,False
+4024,Miscellaneous Income,Income,Other income,Other income,Credit,False
+4025,Export Incentives,Income,Other income,Other income,Credit,False
+5000,Salaries & Wages,Expense,Expenses,Employee benefit expense,Debit,False
+5001,Bonus & Incentives,Expense,Expenses,Employee benefit expense,Debit,False
+5002,Employer PF Contribution,Expense,Expenses,Employee benefit expense,Debit,False
+5003,Employer ESI Contribution,Expense,Expenses,Employee benefit expense,Debit,False
+5004,Gratuity Expense,Expense,Expenses,Employee benefit expense,Debit,False
+5005,Leave Encashment Expense,Expense,Expenses,Employee benefit expense,Debit,False
+5006,Staff Welfare Expenses,Expense,Expenses,Employee benefit expense,Debit,False
+5007,Recruitment Expenses,Expense,Expenses,Employee benefit expense,Debit,False
+5008,Training & Development,Expense,Expenses,Employee benefit expense,Debit,False
+5009,Contract Staff Cost,Expense,Expenses,Employee benefit expense,Debit,False
+5100,Subcontracting Charges,Expense,Expenses,Cost of services,Debit,False
+5101,Cloud Hosting (AWS/Azure/GCP),Expense,Expenses,Cost of services,Debit,False
+5102,Software Subscriptions (SaaS Tools),Expense,Expenses,Cost of services,Debit,False
+5103,Software Licence Fees,Expense,Expenses,Cost of services,Debit,False
+5104,Data & Connectivity Charges,Expense,Expenses,Cost of services,Debit,False
+5105,Third-party API / Platform Fees,Expense,Expenses,Cost of services,Debit,False
+6000,Rent - Office Premises,Expense,Expenses,Other expenses,Debit,False
+6001,Rates & Taxes,Expense,Expenses,Other expenses,Debit,False
+6002,Electricity & Water,Expense,Expenses,Other expenses,Debit,False
+6003,Repairs & Maintenance - Building,Expense,Expenses,Other expenses,Debit,False
+6004,Repairs & Maintenance - Equipment,Expense,Expenses,Other expenses,Debit,False
+6005,Housekeeping & Security,Expense,Expenses,Other expenses,Debit,False
+6006,Office Supplies & Stationery,Expense,Expenses,Other expenses,Debit,False
+6007,Printing,Expense,Expenses,Other expenses,Debit,False
+6008,Postage & Courier,Expense,Expenses,Other expenses,Debit,False
+6009,Telephone & Internet,Expense,Expenses,Other expenses,Debit,False
+6010,Insurance - General,Expense,Expenses,Other expenses,Debit,False
+6011,Insurance - Group Health (Employees),Expense,Expenses,Other expenses,Debit,False
+6100,Legal & Professional Fees,Expense,Expenses,Other expenses,Debit,False
+6101,Statutory Audit Fees,Expense,Expenses,Other expenses,Debit,False
+6102,Internal Audit Fees,Expense,Expenses,Other expenses,Debit,False
+6103,Tax & GST Consultancy,Expense,Expenses,Other expenses,Debit,False
+6104,Company Secretarial / ROC Fees,Expense,Expenses,Other expenses,Debit,False
+6105,Director Sitting Fees,Expense,Expenses,Other expenses,Debit,False
+6200,Travelling - Domestic,Expense,Expenses,Other expenses,Debit,False
+6201,Travelling - Overseas,Expense,Expenses,Other expenses,Debit,False
+6202,Conveyance,Expense,Expenses,Other expenses,Debit,False
+6203,Vehicle Running & Fuel,Expense,Expenses,Other expenses,Debit,False
+6204,Business Promotion,Expense,Expenses,Other expenses,Debit,False
+6205,Advertising & Marketing,Expense,Expenses,Other expenses,Debit,False
+6206,Conference & Events,Expense,Expenses,Other expenses,Debit,False
+6207,Subscriptions & Memberships,Expense,Expenses,Other expenses,Debit,False
+6300,Bank Charges,Expense,Expenses,Other expenses,Debit,False
+6301,Foreign Exchange Loss,Expense,Expenses,Other expenses,Debit,False
+6302,Rounding Off,Expense,Expenses,Other expenses,Debit,False
+6303,Bad Debts Written Off,Expense,Expenses,Other expenses,Debit,False
+6304,Provision for Doubtful Debts,Expense,Expenses,Other expenses,Debit,False
+6305,Donations & CSR,Expense,Expenses,Other expenses,Debit,False
+6306,Loss on Sale of Assets,Expense,Expenses,Other expenses,Debit,False
+6307,GST Expense (ineligible ITC),Expense,Expenses,Other expenses,Debit,False
+6308,Miscellaneous Expenses,Expense,Expenses,Other expenses,Debit,False
+7000,Interest on Term Loan,Expense,Finance costs,Finance costs,Debit,False
+7001,Interest on Working Capital,Expense,Finance costs,Finance costs,Debit,False
+7002,Interest on Lease Liability,Expense,Finance costs,Finance costs,Debit,False
+7003,Interest on Statutory Dues (late),Expense,Finance costs,Finance costs,Debit,False
+7004,Loan Processing Charges,Expense,Finance costs,Finance costs,Debit,False
+8000,Depreciation - PPE,Expense,Depreciation & amortisation,Depreciation & amortisation,Debit,False
+8001,Depreciation - ROU Assets,Expense,Depreciation & amortisation,Depreciation & amortisation,Debit,False
+8002,Amortisation - Intangibles,Expense,Depreciation & amortisation,Depreciation & amortisation,Debit,False
+8100,Current Tax Expense,Expense,Tax expense,Tax expense,Debit,False
+8101,Deferred Tax Expense,Expense,Tax expense,Tax expense,Debit,False
+8102,Prior Period Tax Adjustments,Expense,Tax expense,Tax expense,Debit,False

@@ -1,0 +1,13 @@
+vendor_id,vendor_name,category,gstin,pan,state_code,state,is_intra_state,expense_code,expense_account,gst_rate,tds_section,msme_registered,payment_terms_days,contact
+VEND100,Zenith Cloud Services Pvt Ltd,Cloud hosting,33JVWCR5584G7Z5,JVWCR5584G,33,Tamil Nadu,False,5101,Cloud Hosting (AWS/Azure/GCP),18,194J,False,45,Suresh Kumar
+VEND101,Stellar Software Labs Pvt Ltd,SaaS tools,06VLTCI2229A3ZI,VLTCI2229A,06,Haryana,False,5102,Software Subscriptions (SaaS Tools),18,194J,False,45,Aadhya Patel
+VEND102,Vertex Tech Solutions Pvt Ltd,Subcontracting,07OZVCM7779E4ZR,OZVCM7779E,07,Delhi,False,5100,Subcontracting Charges,18,194C,False,60,Meera Nair
+VEND103,Pioneer Consulting LLP,Legal & professional,33JDVCC3793Y1ZS,JDVCC3793Y,33,Tamil Nadu,False,6100,Legal & Professional Fees,18,194J,True,45,Karthik Reddy
+VEND104,"Sterling & Associates, Chartered Accountants",Statutory audit,29MPYCZ0569Y5Z3,MPYCZ0569Y,29,Karnataka,True,6101,Statutory Audit Fees,18,194J,False,30,Kabir Shah
+VEND105,Orbit Estates & Holdings Pvt Ltd,Office rent,29OLKCY5948I8Z8,OLKCY5948I,29,Karnataka,True,6000,Rent - Office Premises,18,194I,True,45,Sai Chatterjee
+VEND106,Meridian Facility Management Pvt Ltd,Housekeeping/security,29FPDCR0579A9ZA,FPDCR0579A,29,Karnataka,True,6005,Housekeeping & Security,18,194C,False,60,Rohan Khan
+VEND107,Quantum Telecom Pvt Ltd,Telephone & internet,09WPNCL4661P6Z0,WPNCL4661P,09,Uttar Pradesh,False,6009,Telephone & Internet,18,,False,45,Dhruv Menon
+VEND108,Lumina Stationers & Supplies,Office supplies,29ALQCK7119Z8Z5,ALQCK7119Z,29,Karnataka,True,6006,Office Supplies & Stationery,18,,False,30,Nikhil Shah
+VEND109,Catalyst Engineering Services,Repairs - equipment,32RCZCK6770S1ZP,RCZCK6770S,32,Kerala,False,6004,Repairs & Maintenance - Equipment,18,194C,False,45,Suresh Deshpande
+VEND110,Pinnacle Media & Communications Pvt Ltd,Advertising,33YBOCX1612Y9ZH,YBOCX1612Y,33,Tamil Nadu,False,6205,Advertising & Marketing,18,194C,False,30,Ramesh Hegde
+VEND111,Apex Travels Pvt Ltd,Travel & hotel,32EFACJ8198P8ZB,EFACJ8198P,32,Kerala,False,6200,Travelling - Domestic,12,,False,45,Nisha Bose

@@ -1,0 +1,11 @@
+lease_id,asset_class,description,commencement,term_months,end_period,monthly_rent_start,annual_escalation_pct,ibr_annual_pct,lease_liability_initial,initial_direct_costs,rou_asset_initial
+LSE101,Office premises,Office - Pune Delivery Centre,2025-10,96,2033-09,843000,5.0,9.19,66649856,326000,66975856
+LSE102,Vehicles,Vehicle - Pool Car,2025-09,60,2030-08,62000,0.0,9.46,2954869,20000,2974869
+LSE103,Equipment,Office Equipment - Copiers,2025-03,36,2028-02,115000,3.0,11.21,3600210,23000,3623210
+LSE104,Office premises,Office - Pune Delivery Centre,2024-09,102,2033-02,656000,7.0,10.81,54668934,898000,55566934
+LSE105,Vehicles,Vehicle - Pool Car,2024-08,54,2029-01,46000,0.0,9.6,2010624,9000,2019624
+LSE106,Equipment,Networking Equipment,2025-07,42,2028-12,135000,3.0,10.39,4907231,58000,4965231
+LSE107,Office premises,Office - Bengaluru HQ,2024-11,78,2031-04,875000,5.0,9.3,57793353,330000,58123353
+LSE108,Vehicles,Vehicle - Director (SUV),2024-05,42,2027-10,66000,0.0,10.17,2324141,6000,2330141
+LSE109,Equipment,Laptops - Fleet Lease,2024-04,24,2026-03,61000,3.0,10.49,1334168,9000,1343168
+LSE110,Office premises,Office - Pune Delivery Centre,2024-10,96,2032-09,1167000,7.0,10.0,95219282,317000,95536282
