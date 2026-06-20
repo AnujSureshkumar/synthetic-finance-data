@@ -1,4 +1,65 @@
 account_code,account_name,account_type,group,sub_group,normal_balance,is_control
+3000,Equity Share Capital,Equity,Equity,Share capital,Credit,False
+3001,Preference Share Capital,Equity,Equity,Share capital,Credit,False
+3010,Securities Premium,Equity,Equity,Reserves & surplus,Credit,False
+3020,Retained Earnings,Equity,Equity,Reserves & surplus,Credit,False
+3021,General Reserve,Equity,Equity,Reserves & surplus,Credit,False
+3030,Current Year Profit & Loss,Equity,Equity,Reserves & surplus,Credit,False
+3040,Foreign Currency Translation Reserve,Equity,Equity,Other reserves,Credit,False
+3050,Remeasurement of Defined Benefit Plans (OCI),Equity,Equity,Other reserves,Credit,False
+2000,Term Loan - HDFC Bank,Liability,Non-current liabilities,Borrowings,Credit,False
+2001,Working Capital Loan (CC),Liability,Current liabilities,Borrowings,Credit,False
+2002,Vehicle Loan,Liability,Non-current liabilities,Borrowings,Credit,False
+2010,Lease Liability - Non-current,Liability,Non-current liabilities,Lease liabilities,Credit,False
+2011,Lease Liability - Current,Liability,Current liabilities,Lease liabilities,Credit,False
+2100,Trade Payables - Goods,Liability,Current liabilities,Trade payables,Credit,True
+2101,Trade Payables - Services,Liability,Current liabilities,Trade payables,Credit,True
+2102,Trade Payables - MSME,Liability,Current liabilities,Trade payables,Credit,True
+2103,Trade Payables - Import,Liability,Current liabilities,Trade payables,Credit,True
+2110,Creditors for Capital Goods,Liability,Current liabilities,Trade payables,Credit,True
+2200,Output CGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2201,Output SGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2202,Output IGST 0%,Liability,Current liabilities,GST payable,Credit,False
+2203,Output CGST 2.5%,Liability,Current liabilities,GST payable,Credit,False
+2204,Output SGST 2.5%,Liability,Current liabilities,GST payable,Credit,False
+2205,Output IGST 5%,Liability,Current liabilities,GST payable,Credit,False
+2206,Output CGST 6%,Liability,Current liabilities,GST payable,Credit,False
+2207,Output SGST 6%,Liability,Current liabilities,GST payable,Credit,False
+2208,Output IGST 12%,Liability,Current liabilities,GST payable,Credit,False
+2209,Output CGST 9%,Liability,Current liabilities,GST payable,Credit,False
+2210,Output SGST 9%,Liability,Current liabilities,GST payable,Credit,False
+2211,Output IGST 18%,Liability,Current liabilities,GST payable,Credit,False
+2212,Output CGST 14%,Liability,Current liabilities,GST payable,Credit,False
+2213,Output SGST 14%,Liability,Current liabilities,GST payable,Credit,False
+2214,Output IGST 28%,Liability,Current liabilities,GST payable,Credit,False
+2250,GST Payable under RCM,Liability,Current liabilities,GST payable,Credit,False
+2251,GST Liability - Net Payable,Liability,Current liabilities,GST payable,Credit,False
+2300,TDS Payable - 192 (Salary),Liability,Current liabilities,Statutory dues,Credit,False
+2301,TDS Payable - 194C (Contractors),Liability,Current liabilities,Statutory dues,Credit,False
+2302,TDS Payable - 194J (Professional Fees),Liability,Current liabilities,Statutory dues,Credit,False
+2303,TDS Payable - 194I (Rent),Liability,Current liabilities,Statutory dues,Credit,False
+2304,TDS Payable - 194H (Commission),Liability,Current liabilities,Statutory dues,Credit,False
+2305,TDS Payable - 194Q (Purchase of Goods),Liability,Current liabilities,Statutory dues,Credit,False
+2306,TDS Payable - 195 (Non-resident Payments),Liability,Current liabilities,Statutory dues,Credit,False
+2320,TCS Payable - 206C,Liability,Current liabilities,Statutory dues,Credit,False
+2350,PF Payable (Employee + Employer),Liability,Current liabilities,Statutory dues,Credit,False
+2351,ESI Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2352,Professional Tax Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2353,Labour Welfare Fund Payable,Liability,Current liabilities,Statutory dues,Credit,False
+2354,NPS Payable (Employer),Liability,Current liabilities,Statutory dues,Credit,False
+2400,Salaries Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2401,Bonus Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2402,Reimbursements Payable,Liability,Current liabilities,Employee benefits,Credit,False
+2410,Provision for Gratuity,Liability,Non-current liabilities,Employee benefits,Credit,False
+2411,Provision for Leave Encashment,Liability,Non-current liabilities,Employee benefits,Credit,False
+2500,Accrued Expenses,Liability,Current liabilities,Other current liabilities,Credit,False
+2501,Advance from Customers,Liability,Current liabilities,Other current liabilities,Credit,True
+2502,Deferred Revenue (Unearned),Liability,Current liabilities,Other current liabilities,Credit,False
+2503,Payable to Group Companies,Liability,Current liabilities,Other current liabilities,Credit,True
+2510,Provision for Income Tax,Liability,Current liabilities,Provisions,Credit,False
+2511,Provision for Audit Fees,Liability,Current liabilities,Provisions,Credit,False
+2512,Provision for Expenses,Liability,Current liabilities,Provisions,Credit,False
+2520,Deferred Tax Liability,Liability,Non-current liabilities,Deferred tax,Credit,False
 1010,Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Debit,False
 1015,Accumulated Depreciation - Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Credit,False
 1020,Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Debit,False
@@ -42,17 +103,17 @@ account_code,account_name,account_type,group,sub_group,normal_balance,is_control
 1400,Input CGST 0%,Asset,Current assets,GST input credit,Debit,False
 1401,Input SGST 0%,Asset,Current assets,GST input credit,Debit,False
 1402,Input IGST 0%,Asset,Current assets,GST input credit,Debit,False
-1403,Input CGST 5%,Asset,Current assets,GST input credit,Debit,False
-1404,Input SGST 5%,Asset,Current assets,GST input credit,Debit,False
+1403,Input CGST 2.5%,Asset,Current assets,GST input credit,Debit,False
+1404,Input SGST 2.5%,Asset,Current assets,GST input credit,Debit,False
 1405,Input IGST 5%,Asset,Current assets,GST input credit,Debit,False
-1406,Input CGST 12%,Asset,Current assets,GST input credit,Debit,False
-1407,Input SGST 12%,Asset,Current assets,GST input credit,Debit,False
+1406,Input CGST 6%,Asset,Current assets,GST input credit,Debit,False
+1407,Input SGST 6%,Asset,Current assets,GST input credit,Debit,False
 1408,Input IGST 12%,Asset,Current assets,GST input credit,Debit,False
-1409,Input CGST 18%,Asset,Current assets,GST input credit,Debit,False
-1410,Input SGST 18%,Asset,Current assets,GST input credit,Debit,False
+1409,Input CGST 9%,Asset,Current assets,GST input credit,Debit,False
+1410,Input SGST 9%,Asset,Current assets,GST input credit,Debit,False
 1411,Input IGST 18%,Asset,Current assets,GST input credit,Debit,False
-1412,Input CGST 28%,Asset,Current assets,GST input credit,Debit,False
-1413,Input SGST 28%,Asset,Current assets,GST input credit,Debit,False
+1412,Input CGST 14%,Asset,Current assets,GST input credit,Debit,False
+1413,Input SGST 14%,Asset,Current assets,GST input credit,Debit,False
 1414,Input IGST 28%,Asset,Current assets,GST input credit,Debit,False
 1450,GST Electronic Cash Ledger,Asset,Current assets,GST input credit,Debit,False
 1451,GST Input Credit (Provisional / ineligible),Asset,Current assets,GST input credit,Debit,False
@@ -70,67 +131,6 @@ account_code,account_name,account_type,group,sub_group,normal_balance,is_control
 1555,Prepaid AMC,Asset,Current assets,Other current assets,Debit,False
 1560,GST Refund Receivable (Export/LUT),Asset,Current assets,Other current assets,Debit,False
 1561,Receivable from Group Companies,Asset,Current assets,Other current assets,Debit,True
-2000,Term Loan - HDFC Bank,Liability,Non-current liabilities,Borrowings,Credit,False
-2001,Working Capital Loan (CC),Liability,Current liabilities,Borrowings,Credit,False
-2002,Vehicle Loan,Liability,Non-current liabilities,Borrowings,Credit,False
-2010,Lease Liability - Non-current,Liability,Non-current liabilities,Lease liabilities,Credit,False
-2011,Lease Liability - Current,Liability,Current liabilities,Lease liabilities,Credit,False
-2100,Trade Payables - Goods,Liability,Current liabilities,Trade payables,Credit,True
-2101,Trade Payables - Services,Liability,Current liabilities,Trade payables,Credit,True
-2102,Trade Payables - MSME,Liability,Current liabilities,Trade payables,Credit,True
-2103,Trade Payables - Import,Liability,Current liabilities,Trade payables,Credit,True
-2110,Creditors for Capital Goods,Liability,Current liabilities,Trade payables,Credit,True
-2200,Output CGST 0%,Liability,Current liabilities,GST payable,Credit,False
-2201,Output SGST 0%,Liability,Current liabilities,GST payable,Credit,False
-2202,Output IGST 0%,Liability,Current liabilities,GST payable,Credit,False
-2203,Output CGST 5%,Liability,Current liabilities,GST payable,Credit,False
-2204,Output SGST 5%,Liability,Current liabilities,GST payable,Credit,False
-2205,Output IGST 5%,Liability,Current liabilities,GST payable,Credit,False
-2206,Output CGST 12%,Liability,Current liabilities,GST payable,Credit,False
-2207,Output SGST 12%,Liability,Current liabilities,GST payable,Credit,False
-2208,Output IGST 12%,Liability,Current liabilities,GST payable,Credit,False
-2209,Output CGST 18%,Liability,Current liabilities,GST payable,Credit,False
-2210,Output SGST 18%,Liability,Current liabilities,GST payable,Credit,False
-2211,Output IGST 18%,Liability,Current liabilities,GST payable,Credit,False
-2212,Output CGST 28%,Liability,Current liabilities,GST payable,Credit,False
-2213,Output SGST 28%,Liability,Current liabilities,GST payable,Credit,False
-2214,Output IGST 28%,Liability,Current liabilities,GST payable,Credit,False
-2250,GST Payable under RCM,Liability,Current liabilities,GST payable,Credit,False
-2251,GST Liability - Net Payable,Liability,Current liabilities,GST payable,Credit,False
-2300,TDS Payable - 192 (Salary),Liability,Current liabilities,Statutory dues,Credit,False
-2301,TDS Payable - 194C (Contractors),Liability,Current liabilities,Statutory dues,Credit,False
-2302,TDS Payable - 194J (Professional Fees),Liability,Current liabilities,Statutory dues,Credit,False
-2303,TDS Payable - 194I (Rent),Liability,Current liabilities,Statutory dues,Credit,False
-2304,TDS Payable - 194H (Commission),Liability,Current liabilities,Statutory dues,Credit,False
-2305,TDS Payable - 194Q (Purchase of Goods),Liability,Current liabilities,Statutory dues,Credit,False
-2306,TDS Payable - 195 (Non-resident Payments),Liability,Current liabilities,Statutory dues,Credit,False
-2320,TCS Payable - 206C,Liability,Current liabilities,Statutory dues,Credit,False
-2350,PF Payable (Employee + Employer),Liability,Current liabilities,Statutory dues,Credit,False
-2351,ESI Payable,Liability,Current liabilities,Statutory dues,Credit,False
-2352,Professional Tax Payable,Liability,Current liabilities,Statutory dues,Credit,False
-2353,Labour Welfare Fund Payable,Liability,Current liabilities,Statutory dues,Credit,False
-2354,NPS Payable (Employer),Liability,Current liabilities,Statutory dues,Credit,False
-2400,Salaries Payable,Liability,Current liabilities,Employee benefits,Credit,False
-2401,Bonus Payable,Liability,Current liabilities,Employee benefits,Credit,False
-2402,Reimbursements Payable,Liability,Current liabilities,Employee benefits,Credit,False
-2410,Provision for Gratuity,Liability,Non-current liabilities,Employee benefits,Credit,False
-2411,Provision for Leave Encashment,Liability,Non-current liabilities,Employee benefits,Credit,False
-2500,Accrued Expenses,Liability,Current liabilities,Other current liabilities,Credit,False
-2501,Advance from Customers,Liability,Current liabilities,Other current liabilities,Credit,True
-2502,Deferred Revenue (Unearned),Liability,Current liabilities,Other current liabilities,Credit,False
-2503,Payable to Group Companies,Liability,Current liabilities,Other current liabilities,Credit,True
-2510,Provision for Income Tax,Liability,Current liabilities,Provisions,Credit,False
-2511,Provision for Audit Fees,Liability,Current liabilities,Provisions,Credit,False
-2512,Provision for Expenses,Liability,Current liabilities,Provisions,Credit,False
-2520,Deferred Tax Liability,Liability,Non-current liabilities,Deferred tax,Credit,False
-3000,Equity Share Capital,Equity,Equity,Share capital,Credit,False
-3001,Preference Share Capital,Equity,Equity,Share capital,Credit,False
-3010,Securities Premium,Equity,Equity,Reserves & surplus,Credit,False
-3020,Retained Earnings,Equity,Equity,Reserves & surplus,Credit,False
-3021,General Reserve,Equity,Equity,Reserves & surplus,Credit,False
-3030,Current Year Profit & Loss,Equity,Equity,Reserves & surplus,Credit,False
-3040,Foreign Currency Translation Reserve,Equity,Equity,Other reserves,Credit,False
-3050,Remeasurement of Defined Benefit Plans (OCI),Equity,Equity,Other reserves,Credit,False
 4000,Revenue - Software Services (Domestic),Income,Revenue,Operating revenue,Credit,False
 4001,Revenue - Software Services (Export),Income,Revenue,Operating revenue,Credit,False
 4002,Revenue - Annual Maintenance Contracts,Income,Revenue,Operating revenue,Credit,False

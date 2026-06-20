@@ -7,12 +7,12 @@ section, PF/ESI/PT, gratuity, and so on. Numeric coding follows a simple
 block scheme so the GL extract and other generators can reference accounts by
 range.
 
-Code blocks
-    1000-1999  Assets
-    2000-2999  Liabilities
-    3000-3999  Equity
-    4000-4999  Income
-    5000-8999  Expenses
+Code blocks (codes unchanged; chart presents in Schedule III balance-sheet order)
+    3000-3999  Equity        (presented first)
+    2000-2999  Liabilities   (presented second)
+    1000-1999  Assets        (presented third)
+    4000-4999  Income        (presented fourth)
+    5000-8999  Expenses      (presented fifth)
 
 Outputs (in ./output):
     chart_of_accounts.csv
@@ -91,11 +91,12 @@ add(1330, "Fixed Deposits (< 3 months)", "Asset", "Current assets", "Cash & cash
 add(1335, "Fixed Deposits (3-12 months)", "Asset", "Current assets", "Bank balances - other", "Debit")
 
 # GST input credit (by rate) + electronic ledgers
-gst_rates = ["0%", "5%", "12%", "18%", "28%"]
-for i, r in enumerate(gst_rates):
-    add(1400 + i * 3, f"Input CGST {r}", "Asset", "Current assets", "GST input credit", "Debit")
-    add(1401 + i * 3, f"Input SGST {r}", "Asset", "Current assets", "GST input credit", "Debit")
-    add(1402 + i * 3, f"Input IGST {r}", "Asset", "Current assets", "GST input credit", "Debit")
+# igst_r = full slab; half_r = CGST = SGST (each half the slab)
+gst_slabs = [("0%", "0%"), ("5%", "2.5%"), ("12%", "6%"), ("18%", "9%"), ("28%", "14%")]
+for i, (igst_r, half_r) in enumerate(gst_slabs):
+    add(1400 + i * 3, f"Input CGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
+    add(1401 + i * 3, f"Input SGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
+    add(1402 + i * 3, f"Input IGST {igst_r}", "Asset", "Current assets", "GST input credit", "Debit")
 add(1450, "GST Electronic Cash Ledger", "Asset", "Current assets", "GST input credit", "Debit")
 add(1451, "GST Input Credit (Provisional / ineligible)", "Asset", "Current assets", "GST input credit", "Debit")
 
@@ -139,10 +140,10 @@ add(2103, "Trade Payables - Import", "Liability", "Current liabilities", "Trade 
 add(2110, "Creditors for Capital Goods", "Liability", "Current liabilities", "Trade payables", "Credit", control=True)
 
 # GST output (by rate) + RCM
-for i, r in enumerate(gst_rates):
-    add(2200 + i * 3, f"Output CGST {r}", "Liability", "Current liabilities", "GST payable", "Credit")
-    add(2201 + i * 3, f"Output SGST {r}", "Liability", "Current liabilities", "GST payable", "Credit")
-    add(2202 + i * 3, f"Output IGST {r}", "Liability", "Current liabilities", "GST payable", "Credit")
+for i, (igst_r, half_r) in enumerate(gst_slabs):
+    add(2200 + i * 3, f"Output CGST {half_r}", "Liability", "Current liabilities", "GST payable", "Credit")
+    add(2201 + i * 3, f"Output SGST {half_r}", "Liability", "Current liabilities", "GST payable", "Credit")
+    add(2202 + i * 3, f"Output IGST {igst_r}", "Liability", "Current liabilities", "GST payable", "Credit")
 add(2250, "GST Payable under RCM", "Liability", "Current liabilities", "GST payable", "Credit")
 add(2251, "GST Liability - Net Payable", "Liability", "Current liabilities", "GST payable", "Credit")
 
@@ -300,7 +301,11 @@ def build_df() -> pd.DataFrame:
             "account_code", "account_name", "account_type",
             "group", "sub_group", "normal_balance", "is_control",
         ],
-    ).sort_values("account_code").reset_index(drop=True)
+    )
+    # Present in Schedule III balance-sheet order; codes are unchanged
+    type_order = {"Equity": 0, "Liability": 1, "Asset": 2, "Income": 3, "Expense": 4}
+    df["_ord"] = df["account_type"].map(type_order)
+    df = df.sort_values(["_ord", "account_code"]).drop(columns="_ord").reset_index(drop=True)
     # integrity checks
     assert df["account_code"].is_unique, "Duplicate account codes detected"
     return df
