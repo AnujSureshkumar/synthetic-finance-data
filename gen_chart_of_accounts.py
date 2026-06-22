@@ -7,10 +7,10 @@ section, PF/ESI/PT, gratuity, and so on. Numeric coding follows a simple
 block scheme so the GL extract and other generators can reference accounts by
 range.
 
-Code blocks (codes unchanged; chart presents in Schedule III balance-sheet order)
-    3000-3999  Equity        (presented first)
+Code blocks (Schedule III balance-sheet order; code prefix matches that order)
+    1000-1999  Equity        (presented first)
     2000-2999  Liabilities   (presented second)
-    1000-1999  Assets        (presented third)
+    3000-3999  Assets        (presented third)
     4000-4999  Income        (presented fourth)
     5000-8999  Expenses      (presented fifth)
 
@@ -39,18 +39,18 @@ def add(code, name, atype, group, sub, normal, control=False):
 
 
 # --------------------------------------------------------------------------- #
-# 1000-1999  ASSETS
+# 3000-3999  ASSETS
 # --------------------------------------------------------------------------- #
 # Non-current assets — Property, plant & equipment (gross + accumulated dep)
 ppe = [
-    ("Leasehold Improvements", 1010),
-    ("Furniture & Fixtures", 1020),
-    ("Office Equipment", 1030),
-    ("Computers & Laptops", 1040),
-    ("Servers & Networking Equipment", 1050),
-    ("Plant & Machinery", 1060),
-    ("Electrical Installations", 1070),
-    ("Motor Vehicles", 1080),
+    ("Leasehold Improvements", 3010),
+    ("Furniture & Fixtures", 3020),
+    ("Office Equipment", 3030),
+    ("Computers & Laptops", 3040),
+    ("Servers & Networking Equipment", 3050),
+    ("Plant & Machinery", 3060),
+    ("Electrical Installations", 3070),
+    ("Motor Vehicles", 3080),
 ]
 for name, code in ppe:
     add(code, name, "Asset", "Non-current assets", "Property, plant & equipment", "Debit")
@@ -58,24 +58,24 @@ for name, code in ppe:
         "Non-current assets", "Property, plant & equipment", "Credit")
 
 # Intangibles & ROU
-add(1100, "Software Licences (Intangible)", "Asset", "Non-current assets", "Intangible assets", "Debit")
-add(1105, "Accumulated Amortisation - Software", "Asset", "Non-current assets", "Intangible assets", "Credit")
-add(1110, "Goodwill", "Asset", "Non-current assets", "Intangible assets", "Debit")
-add(1120, "Right-of-Use Asset - Office Premises", "Asset", "Non-current assets", "Right-of-use assets", "Debit")
-add(1121, "Right-of-Use Asset - Equipment", "Asset", "Non-current assets", "Right-of-use assets", "Debit")
-add(1125, "Accumulated Depreciation - ROU Assets", "Asset", "Non-current assets", "Right-of-use assets", "Credit")
+add(3100, "Software Licences (Intangible)", "Asset", "Non-current assets", "Intangible assets", "Debit")
+add(3105, "Accumulated Amortisation - Software", "Asset", "Non-current assets", "Intangible assets", "Credit")
+add(3110, "Goodwill", "Asset", "Non-current assets", "Intangible assets", "Debit")
+add(3120, "Right-of-Use Asset - Office Premises", "Asset", "Non-current assets", "Right-of-use assets", "Debit")
+add(3121, "Right-of-Use Asset - Equipment", "Asset", "Non-current assets", "Right-of-use assets", "Debit")
+add(3125, "Accumulated Depreciation - ROU Assets", "Asset", "Non-current assets", "Right-of-use assets", "Credit")
 
 # Non-current financial assets
-add(1150, "Security Deposits - Rent", "Asset", "Non-current assets", "Other financial assets", "Debit")
-add(1151, "Security Deposits - Utilities", "Asset", "Non-current assets", "Other financial assets", "Debit")
-add(1160, "Deferred Tax Asset", "Asset", "Non-current assets", "Deferred tax", "Debit")
-add(1170, "Investment in Subsidiary - Middle East", "Asset", "Non-current assets", "Investments", "Debit")
+add(3150, "Security Deposits - Rent", "Asset", "Non-current assets", "Other financial assets", "Debit")
+add(3151, "Security Deposits - Utilities", "Asset", "Non-current assets", "Other financial assets", "Debit")
+add(3160, "Deferred Tax Asset", "Asset", "Non-current assets", "Deferred tax", "Debit")
+add(3170, "Investment in Subsidiary - Middle East", "Asset", "Non-current assets", "Investments", "Debit")
 
 # Current assets — Trade receivables (control)
-add(1200, "Trade Receivables - Domestic", "Asset", "Current assets", "Trade receivables", "Debit", control=True)
-add(1201, "Trade Receivables - Export", "Asset", "Current assets", "Trade receivables", "Debit", control=True)
-add(1205, "Allowance for Expected Credit Loss", "Asset", "Current assets", "Trade receivables", "Credit")
-add(1210, "Unbilled Revenue", "Asset", "Current assets", "Trade receivables", "Debit")
+add(3200, "Trade Receivables - Domestic", "Asset", "Current assets", "Trade receivables", "Debit", control=True)
+add(3201, "Trade Receivables - Export", "Asset", "Current assets", "Trade receivables", "Debit", control=True)
+add(3205, "Allowance for Expected Credit Loss", "Asset", "Current assets", "Trade receivables", "Credit")
+add(3210, "Unbilled Revenue", "Asset", "Current assets", "Trade receivables", "Debit")
 
 # Cash & bank
 banks = [
@@ -84,41 +84,41 @@ banks = [
     "HDFC Bank - EEFC A/c (USD)",
 ]
 for i, b in enumerate(banks):
-    add(1300 + i, b, "Asset", "Current assets", "Cash & cash equivalents", "Debit")
-add(1320, "Cash in Hand", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
-add(1325, "Petty Cash", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
-add(1330, "Fixed Deposits (< 3 months)", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
-add(1335, "Fixed Deposits (3-12 months)", "Asset", "Current assets", "Bank balances - other", "Debit")
+    add(3300 + i, b, "Asset", "Current assets", "Cash & cash equivalents", "Debit")
+add(3320, "Cash in Hand", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
+add(3325, "Petty Cash", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
+add(3330, "Fixed Deposits (< 3 months)", "Asset", "Current assets", "Cash & cash equivalents", "Debit")
+add(3335, "Fixed Deposits (3-12 months)", "Asset", "Current assets", "Bank balances - other", "Debit")
 
 # GST input credit (by rate) + electronic ledgers
 # igst_r = full slab; half_r = CGST = SGST (each half the slab)
 gst_slabs = [("0%", "0%"), ("5%", "2.5%"), ("12%", "6%"), ("18%", "9%"), ("28%", "14%")]
 for i, (igst_r, half_r) in enumerate(gst_slabs):
-    add(1400 + i * 3, f"Input CGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
-    add(1401 + i * 3, f"Input SGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
-    add(1402 + i * 3, f"Input IGST {igst_r}", "Asset", "Current assets", "GST input credit", "Debit")
-add(1450, "GST Electronic Cash Ledger", "Asset", "Current assets", "GST input credit", "Debit")
-add(1451, "GST Input Credit (Provisional / ineligible)", "Asset", "Current assets", "GST input credit", "Debit")
+    add(3400 + i * 3, f"Input CGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
+    add(3401 + i * 3, f"Input SGST {half_r}", "Asset", "Current assets", "GST input credit", "Debit")
+    add(3402 + i * 3, f"Input IGST {igst_r}", "Asset", "Current assets", "GST input credit", "Debit")
+add(3450, "GST Electronic Cash Ledger", "Asset", "Current assets", "GST input credit", "Debit")
+add(3451, "GST Input Credit (Provisional / ineligible)", "Asset", "Current assets", "GST input credit", "Debit")
 
 # Other taxes recoverable
-add(1460, "TDS Receivable (26AS)", "Asset", "Current assets", "Other tax assets", "Debit")
-add(1461, "TCS Receivable", "Asset", "Current assets", "Other tax assets", "Debit")
-add(1462, "Advance Income Tax", "Asset", "Current assets", "Other tax assets", "Debit")
-add(1463, "Income Tax Refund Due", "Asset", "Current assets", "Other tax assets", "Debit")
+add(3460, "TDS Receivable (26AS)", "Asset", "Current assets", "Other tax assets", "Debit")
+add(3461, "TCS Receivable", "Asset", "Current assets", "Other tax assets", "Debit")
+add(3462, "Advance Income Tax", "Asset", "Current assets", "Other tax assets", "Debit")
+add(3463, "Income Tax Refund Due", "Asset", "Current assets", "Other tax assets", "Debit")
 
 # Inventory (light, ITeS holds little)
-add(1500, "Inventory - Consumables", "Asset", "Current assets", "Inventories", "Debit")
-add(1501, "Inventory - Spares", "Asset", "Current assets", "Inventories", "Debit")
+add(3500, "Inventory - Consumables", "Asset", "Current assets", "Inventories", "Debit")
+add(3501, "Inventory - Spares", "Asset", "Current assets", "Inventories", "Debit")
 
 # Loans, advances & prepaids
-add(1550, "Advance to Vendors", "Asset", "Current assets", "Other current assets", "Debit", control=True)
-add(1551, "Advance to Employees", "Asset", "Current assets", "Other current assets", "Debit")
-add(1552, "Prepaid Insurance", "Asset", "Current assets", "Other current assets", "Debit")
-add(1553, "Prepaid Software Subscriptions", "Asset", "Current assets", "Other current assets", "Debit")
-add(1554, "Prepaid Rent", "Asset", "Current assets", "Other current assets", "Debit")
-add(1555, "Prepaid AMC", "Asset", "Current assets", "Other current assets", "Debit")
-add(1560, "GST Refund Receivable (Export/LUT)", "Asset", "Current assets", "Other current assets", "Debit")
-add(1561, "Receivable from Group Companies", "Asset", "Current assets", "Other current assets", "Debit", control=True)
+add(3550, "Advance to Vendors", "Asset", "Current assets", "Other current assets", "Debit", control=True)
+add(3551, "Advance to Employees", "Asset", "Current assets", "Other current assets", "Debit")
+add(3552, "Prepaid Insurance", "Asset", "Current assets", "Other current assets", "Debit")
+add(3553, "Prepaid Software Subscriptions", "Asset", "Current assets", "Other current assets", "Debit")
+add(3554, "Prepaid Rent", "Asset", "Current assets", "Other current assets", "Debit")
+add(3555, "Prepaid AMC", "Asset", "Current assets", "Other current assets", "Debit")
+add(3560, "GST Refund Receivable (Export/LUT)", "Asset", "Current assets", "Other current assets", "Debit")
+add(3561, "Receivable from Group Companies", "Asset", "Current assets", "Other current assets", "Debit", control=True)
 
 # --------------------------------------------------------------------------- #
 # 2000-2999  LIABILITIES
@@ -183,16 +183,16 @@ add(2512, "Provision for Expenses", "Liability", "Current liabilities", "Provisi
 add(2520, "Deferred Tax Liability", "Liability", "Non-current liabilities", "Deferred tax", "Credit")
 
 # --------------------------------------------------------------------------- #
-# 3000-3999  EQUITY
+# 1000-1999  EQUITY
 # --------------------------------------------------------------------------- #
-add(3000, "Equity Share Capital", "Equity", "Equity", "Share capital", "Credit")
-add(3001, "Preference Share Capital", "Equity", "Equity", "Share capital", "Credit")
-add(3010, "Securities Premium", "Equity", "Equity", "Reserves & surplus", "Credit")
-add(3020, "Retained Earnings", "Equity", "Equity", "Reserves & surplus", "Credit")
-add(3021, "General Reserve", "Equity", "Equity", "Reserves & surplus", "Credit")
-add(3030, "Current Year Profit & Loss", "Equity", "Equity", "Reserves & surplus", "Credit")
-add(3040, "Foreign Currency Translation Reserve", "Equity", "Equity", "Other reserves", "Credit")
-add(3050, "Remeasurement of Defined Benefit Plans (OCI)", "Equity", "Equity", "Other reserves", "Credit")
+add(1000, "Equity Share Capital", "Equity", "Equity", "Share capital", "Credit")
+add(1001, "Preference Share Capital", "Equity", "Equity", "Share capital", "Credit")
+add(1010, "Securities Premium", "Equity", "Equity", "Reserves & surplus", "Credit")
+add(1020, "Retained Earnings", "Equity", "Equity", "Reserves & surplus", "Credit")
+add(1021, "General Reserve", "Equity", "Equity", "Reserves & surplus", "Credit")
+add(1030, "Current Year Profit & Loss", "Equity", "Equity", "Reserves & surplus", "Credit")
+add(1040, "Foreign Currency Translation Reserve", "Equity", "Equity", "Other reserves", "Credit")
+add(1050, "Remeasurement of Defined Benefit Plans (OCI)", "Equity", "Equity", "Other reserves", "Credit")
 
 # --------------------------------------------------------------------------- #
 # 4000-4999  INCOME
@@ -302,7 +302,7 @@ def build_df() -> pd.DataFrame:
             "group", "sub_group", "normal_balance", "is_control",
         ],
     )
-    # Present in Schedule III balance-sheet order; codes are unchanged
+    # Present in Schedule III balance-sheet order (code prefix matches this order)
     type_order = {"Equity": 0, "Liability": 1, "Asset": 2, "Income": 3, "Expense": 4}
     df["_ord"] = df["account_type"].map(type_order)
     df = df.sort_values(["_ord", "account_code"]).drop(columns="_ord").reset_index(drop=True)

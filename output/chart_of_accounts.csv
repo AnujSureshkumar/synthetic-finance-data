@@ -1,12 +1,12 @@
 account_code,account_name,account_type,group,sub_group,normal_balance,is_control
-3000,Equity Share Capital,Equity,Equity,Share capital,Credit,False
-3001,Preference Share Capital,Equity,Equity,Share capital,Credit,False
-3010,Securities Premium,Equity,Equity,Reserves & surplus,Credit,False
-3020,Retained Earnings,Equity,Equity,Reserves & surplus,Credit,False
-3021,General Reserve,Equity,Equity,Reserves & surplus,Credit,False
-3030,Current Year Profit & Loss,Equity,Equity,Reserves & surplus,Credit,False
-3040,Foreign Currency Translation Reserve,Equity,Equity,Other reserves,Credit,False
-3050,Remeasurement of Defined Benefit Plans (OCI),Equity,Equity,Other reserves,Credit,False
+1000,Equity Share Capital,Equity,Equity,Share capital,Credit,False
+1001,Preference Share Capital,Equity,Equity,Share capital,Credit,False
+1010,Securities Premium,Equity,Equity,Reserves & surplus,Credit,False
+1020,Retained Earnings,Equity,Equity,Reserves & surplus,Credit,False
+1021,General Reserve,Equity,Equity,Reserves & surplus,Credit,False
+1030,Current Year Profit & Loss,Equity,Equity,Reserves & surplus,Credit,False
+1040,Foreign Currency Translation Reserve,Equity,Equity,Other reserves,Credit,False
+1050,Remeasurement of Defined Benefit Plans (OCI),Equity,Equity,Other reserves,Credit,False
 2000,Term Loan - HDFC Bank,Liability,Non-current liabilities,Borrowings,Credit,False
 2001,Working Capital Loan (CC),Liability,Current liabilities,Borrowings,Credit,False
 2002,Vehicle Loan,Liability,Non-current liabilities,Borrowings,Credit,False
@@ -60,77 +60,77 @@ account_code,account_name,account_type,group,sub_group,normal_balance,is_control
 2511,Provision for Audit Fees,Liability,Current liabilities,Provisions,Credit,False
 2512,Provision for Expenses,Liability,Current liabilities,Provisions,Credit,False
 2520,Deferred Tax Liability,Liability,Non-current liabilities,Deferred tax,Credit,False
-1010,Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1015,Accumulated Depreciation - Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1020,Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1025,Accumulated Depreciation - Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1030,Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1035,Accumulated Depreciation - Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1040,Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1045,Accumulated Depreciation - Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1050,Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1055,Accumulated Depreciation - Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1060,Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1065,Accumulated Depreciation - Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1070,Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1075,Accumulated Depreciation - Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1080,Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Debit,False
-1085,Accumulated Depreciation - Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Credit,False
-1100,Software Licences (Intangible),Asset,Non-current assets,Intangible assets,Debit,False
-1105,Accumulated Amortisation - Software,Asset,Non-current assets,Intangible assets,Credit,False
-1110,Goodwill,Asset,Non-current assets,Intangible assets,Debit,False
-1120,Right-of-Use Asset - Office Premises,Asset,Non-current assets,Right-of-use assets,Debit,False
-1121,Right-of-Use Asset - Equipment,Asset,Non-current assets,Right-of-use assets,Debit,False
-1125,Accumulated Depreciation - ROU Assets,Asset,Non-current assets,Right-of-use assets,Credit,False
-1150,Security Deposits - Rent,Asset,Non-current assets,Other financial assets,Debit,False
-1151,Security Deposits - Utilities,Asset,Non-current assets,Other financial assets,Debit,False
-1160,Deferred Tax Asset,Asset,Non-current assets,Deferred tax,Debit,False
-1170,Investment in Subsidiary - Middle East,Asset,Non-current assets,Investments,Debit,False
-1200,Trade Receivables - Domestic,Asset,Current assets,Trade receivables,Debit,True
-1201,Trade Receivables - Export,Asset,Current assets,Trade receivables,Debit,True
-1205,Allowance for Expected Credit Loss,Asset,Current assets,Trade receivables,Credit,False
-1210,Unbilled Revenue,Asset,Current assets,Trade receivables,Debit,False
-1300,HDFC Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
-1301,ICICI Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
-1302,Axis Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
-1303,State Bank of India - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
-1304,Kotak Mahindra Bank - Payroll A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
-1305,HDFC Bank - EEFC A/c (USD),Asset,Current assets,Cash & cash equivalents,Debit,False
-1320,Cash in Hand,Asset,Current assets,Cash & cash equivalents,Debit,False
-1325,Petty Cash,Asset,Current assets,Cash & cash equivalents,Debit,False
-1330,Fixed Deposits (< 3 months),Asset,Current assets,Cash & cash equivalents,Debit,False
-1335,Fixed Deposits (3-12 months),Asset,Current assets,Bank balances - other,Debit,False
-1400,Input CGST 0%,Asset,Current assets,GST input credit,Debit,False
-1401,Input SGST 0%,Asset,Current assets,GST input credit,Debit,False
-1402,Input IGST 0%,Asset,Current assets,GST input credit,Debit,False
-1403,Input CGST 2.5%,Asset,Current assets,GST input credit,Debit,False
-1404,Input SGST 2.5%,Asset,Current assets,GST input credit,Debit,False
-1405,Input IGST 5%,Asset,Current assets,GST input credit,Debit,False
-1406,Input CGST 6%,Asset,Current assets,GST input credit,Debit,False
-1407,Input SGST 6%,Asset,Current assets,GST input credit,Debit,False
-1408,Input IGST 12%,Asset,Current assets,GST input credit,Debit,False
-1409,Input CGST 9%,Asset,Current assets,GST input credit,Debit,False
-1410,Input SGST 9%,Asset,Current assets,GST input credit,Debit,False
-1411,Input IGST 18%,Asset,Current assets,GST input credit,Debit,False
-1412,Input CGST 14%,Asset,Current assets,GST input credit,Debit,False
-1413,Input SGST 14%,Asset,Current assets,GST input credit,Debit,False
-1414,Input IGST 28%,Asset,Current assets,GST input credit,Debit,False
-1450,GST Electronic Cash Ledger,Asset,Current assets,GST input credit,Debit,False
-1451,GST Input Credit (Provisional / ineligible),Asset,Current assets,GST input credit,Debit,False
-1460,TDS Receivable (26AS),Asset,Current assets,Other tax assets,Debit,False
-1461,TCS Receivable,Asset,Current assets,Other tax assets,Debit,False
-1462,Advance Income Tax,Asset,Current assets,Other tax assets,Debit,False
-1463,Income Tax Refund Due,Asset,Current assets,Other tax assets,Debit,False
-1500,Inventory - Consumables,Asset,Current assets,Inventories,Debit,False
-1501,Inventory - Spares,Asset,Current assets,Inventories,Debit,False
-1550,Advance to Vendors,Asset,Current assets,Other current assets,Debit,True
-1551,Advance to Employees,Asset,Current assets,Other current assets,Debit,False
-1552,Prepaid Insurance,Asset,Current assets,Other current assets,Debit,False
-1553,Prepaid Software Subscriptions,Asset,Current assets,Other current assets,Debit,False
-1554,Prepaid Rent,Asset,Current assets,Other current assets,Debit,False
-1555,Prepaid AMC,Asset,Current assets,Other current assets,Debit,False
-1560,GST Refund Receivable (Export/LUT),Asset,Current assets,Other current assets,Debit,False
-1561,Receivable from Group Companies,Asset,Current assets,Other current assets,Debit,True
+3010,Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3015,Accumulated Depreciation - Leasehold Improvements,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3020,Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3025,Accumulated Depreciation - Furniture & Fixtures,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3030,Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3035,Accumulated Depreciation - Office Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3040,Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3045,Accumulated Depreciation - Computers & Laptops,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3050,Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3055,Accumulated Depreciation - Servers & Networking Equipment,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3060,Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3065,Accumulated Depreciation - Plant & Machinery,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3070,Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3075,Accumulated Depreciation - Electrical Installations,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3080,Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Debit,False
+3085,Accumulated Depreciation - Motor Vehicles,Asset,Non-current assets,"Property, plant & equipment",Credit,False
+3100,Software Licences (Intangible),Asset,Non-current assets,Intangible assets,Debit,False
+3105,Accumulated Amortisation - Software,Asset,Non-current assets,Intangible assets,Credit,False
+3110,Goodwill,Asset,Non-current assets,Intangible assets,Debit,False
+3120,Right-of-Use Asset - Office Premises,Asset,Non-current assets,Right-of-use assets,Debit,False
+3121,Right-of-Use Asset - Equipment,Asset,Non-current assets,Right-of-use assets,Debit,False
+3125,Accumulated Depreciation - ROU Assets,Asset,Non-current assets,Right-of-use assets,Credit,False
+3150,Security Deposits - Rent,Asset,Non-current assets,Other financial assets,Debit,False
+3151,Security Deposits - Utilities,Asset,Non-current assets,Other financial assets,Debit,False
+3160,Deferred Tax Asset,Asset,Non-current assets,Deferred tax,Debit,False
+3170,Investment in Subsidiary - Middle East,Asset,Non-current assets,Investments,Debit,False
+3200,Trade Receivables - Domestic,Asset,Current assets,Trade receivables,Debit,True
+3201,Trade Receivables - Export,Asset,Current assets,Trade receivables,Debit,True
+3205,Allowance for Expected Credit Loss,Asset,Current assets,Trade receivables,Credit,False
+3210,Unbilled Revenue,Asset,Current assets,Trade receivables,Debit,False
+3300,HDFC Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+3301,ICICI Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+3302,Axis Bank - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+3303,State Bank of India - Current A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+3304,Kotak Mahindra Bank - Payroll A/c,Asset,Current assets,Cash & cash equivalents,Debit,False
+3305,HDFC Bank - EEFC A/c (USD),Asset,Current assets,Cash & cash equivalents,Debit,False
+3320,Cash in Hand,Asset,Current assets,Cash & cash equivalents,Debit,False
+3325,Petty Cash,Asset,Current assets,Cash & cash equivalents,Debit,False
+3330,Fixed Deposits (< 3 months),Asset,Current assets,Cash & cash equivalents,Debit,False
+3335,Fixed Deposits (3-12 months),Asset,Current assets,Bank balances - other,Debit,False
+3400,Input CGST 0%,Asset,Current assets,GST input credit,Debit,False
+3401,Input SGST 0%,Asset,Current assets,GST input credit,Debit,False
+3402,Input IGST 0%,Asset,Current assets,GST input credit,Debit,False
+3403,Input CGST 2.5%,Asset,Current assets,GST input credit,Debit,False
+3404,Input SGST 2.5%,Asset,Current assets,GST input credit,Debit,False
+3405,Input IGST 5%,Asset,Current assets,GST input credit,Debit,False
+3406,Input CGST 6%,Asset,Current assets,GST input credit,Debit,False
+3407,Input SGST 6%,Asset,Current assets,GST input credit,Debit,False
+3408,Input IGST 12%,Asset,Current assets,GST input credit,Debit,False
+3409,Input CGST 9%,Asset,Current assets,GST input credit,Debit,False
+3410,Input SGST 9%,Asset,Current assets,GST input credit,Debit,False
+3411,Input IGST 18%,Asset,Current assets,GST input credit,Debit,False
+3412,Input CGST 14%,Asset,Current assets,GST input credit,Debit,False
+3413,Input SGST 14%,Asset,Current assets,GST input credit,Debit,False
+3414,Input IGST 28%,Asset,Current assets,GST input credit,Debit,False
+3450,GST Electronic Cash Ledger,Asset,Current assets,GST input credit,Debit,False
+3451,GST Input Credit (Provisional / ineligible),Asset,Current assets,GST input credit,Debit,False
+3460,TDS Receivable (26AS),Asset,Current assets,Other tax assets,Debit,False
+3461,TCS Receivable,Asset,Current assets,Other tax assets,Debit,False
+3462,Advance Income Tax,Asset,Current assets,Other tax assets,Debit,False
+3463,Income Tax Refund Due,Asset,Current assets,Other tax assets,Debit,False
+3500,Inventory - Consumables,Asset,Current assets,Inventories,Debit,False
+3501,Inventory - Spares,Asset,Current assets,Inventories,Debit,False
+3550,Advance to Vendors,Asset,Current assets,Other current assets,Debit,True
+3551,Advance to Employees,Asset,Current assets,Other current assets,Debit,False
+3552,Prepaid Insurance,Asset,Current assets,Other current assets,Debit,False
+3553,Prepaid Software Subscriptions,Asset,Current assets,Other current assets,Debit,False
+3554,Prepaid Rent,Asset,Current assets,Other current assets,Debit,False
+3555,Prepaid AMC,Asset,Current assets,Other current assets,Debit,False
+3560,GST Refund Receivable (Export/LUT),Asset,Current assets,Other current assets,Debit,False
+3561,Receivable from Group Companies,Asset,Current assets,Other current assets,Debit,True
 4000,Revenue - Software Services (Domestic),Income,Revenue,Operating revenue,Credit,False
 4001,Revenue - Software Services (Export),Income,Revenue,Operating revenue,Credit,False
 4002,Revenue - Annual Maintenance Contracts,Income,Revenue,Operating revenue,Credit,False

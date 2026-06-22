@@ -49,9 +49,9 @@ A 208-ledger chart of accounts in Indian SME / ITeS format, coded in blocks:
 
 | Block | Head |
 |------:|------|
-| 1000–1999 | Assets |
+| 1000–1999 | Equity |
 | 2000–2999 | Liabilities |
-| 3000–3999 | Equity |
+| 3000–3999 | Assets |
 | 4000–4999 | Income |
 | 5000–8999 | Expenses |
 
